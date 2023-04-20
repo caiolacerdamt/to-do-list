@@ -75,7 +75,7 @@ const inputMuda = () => {
 const atualizaLocalStorage = () => {
     const tarefas = listaDeTarefas.childNodes;
 
-    const localStorageTarefas = {...tarefas}.map(tarefa => {
+    const localStorageTarefas = [...tarefas].map(tarefa => {
         const conteudo = tarefa.firstChild
         const ifCompleta = conteudo.classList.contains('completed')
 
